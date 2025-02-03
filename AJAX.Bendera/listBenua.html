@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar negara diseluruh dunia</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            background-image: linear-gradient(
+            to right,
+            #0d2432,
+            #37526d,
+            #6768ab,
+            #ac8188,
+            #feb17d
+        );
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.502);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+            color: black;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 5px 8px 8px rgba(82, 255, 29, 0.473);
+        }
+
+        .img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #222;
+        }
+
+        p {
+            font-size: 1em;
+            color: #555;    
+        }
+
+        header {
+        background-color: #1976D2;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        header h1 {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        header nav {
+            padding-right: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            height: 80px; /* Disesuaikan lebih pendek */
+            background-color: #93c1f054; /* Biru seperti di gambar */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px; /* Padding horizontal untuk ruang antar elemen */
+        }
+
+        .header h1 {
+            background: linear-gradient(to right, #431a10, #6511ec);
+            -webkit-background-clip: text; 
+            color: transparent;
+            margin: 0;
+            font-size: 24px; /* Ukuran teks sedikit lebih kecil */
+        }
+        header h1:hover {
+            background: linear-gradient(to left, #431a10, #6511ec);
+            -webkit-background-clip: text; 
+            color: transparent;
+            cursor: pointer;
+        }
+
+        .header .nav-links {
+            display: flex;
+            gap: 20px; /* Jarak antar link navigasi */
+        }
+
+        .header .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .header .nav-links a:hover {
+            text-decoration: underline;
+        }
+        a {
+            background: linear-gradient(to right, #431a10, #6511ec);
+            -webkit-background-clip: text; 
+            color: transparent;
+            margin: 0;
+            font-size: 24px; /* Ukuran teks sedikit lebih kecil */
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        .card a {
+            font-size: 16px;
+            color: #333;
+        }
+        div {
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+        }
+        p {
+            font-size: 16px;
+        }
+
+    </style>
+    
+    <header class="header">
+        <h1><a href="negara.html">Informasi Negara</a></h1>
+        <nav class="nav-links">
+            <a href="negara.html">Home</a>
+            <a href="listBenua.html">List Benua</a>
+        </nav>
+    </header>
+
+    <h1>Benua</h1>
+    <div id="container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="listBenua.js"></script>
+</body>
+</html>
